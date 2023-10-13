@@ -300,6 +300,67 @@ background-clip: text;
 .mega__bot__token_img_left{
   max-width: 672px;
 }
+.token_title{
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 120%; /* 42px */
+  margin-bottom: 70px;
+}
+.token__box__text span{
+  color: #A4A4B4;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 120%; /* 27.6px */
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.token__box__text h3{
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+}
+.token__box__text{
+  margin-bottom: 60px;
+}
+.double__btns .boxed__btn{
+  margin-right: 20px;
+}
+.double__btns .inline__btn{
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+  padding: 30px 35px;
+  display: inline-block;
+}
+
+.token-left-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    max-width: 672px;
+    transform: translate(-10%, -50%);
+}
+
+/*
+*chart__area Style
+======================*/
+.chart__content p{
+  color: #DADADA;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 51.2px */
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+
 /*
 *Renounced__area Style
 ======================*/
