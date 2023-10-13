@@ -141,9 +141,7 @@ ul.navbar-nav li a.active, ul.navbar-nav li:hover a{
 .navbar-toggler{
   background: #fff;
 }
-@media(max-width:992px){
 
-}
 /*
 *Hero__Area Style
 ================*/
@@ -151,6 +149,21 @@ ul.navbar-nav li a.active, ul.navbar-nav li:hover a{
   padding-top: 279px;
   padding-bottom: 170px;
   position: relative;
+  z-index: 1;
+}
+.hero__area::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -30%;
+  width: 750px;
+  height: 750px;
+  border-radius: 750px;
+  opacity: 0.5;
+  background: var(--gradient, linear-gradient(93deg, #008BFF 0%, #0119D5 99.32%));
+  filter: blur(160px);
+  transform: translateX(-50%);
+  z-index: 0;
 }
 .hero__area canvas {
   position: absolute;
@@ -161,6 +174,8 @@ ul.navbar-nav li a.active, ul.navbar-nav li:hover a{
 .hero__content{
   max-width: 735px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 .hero__content h1{
   color: #FFF;
@@ -204,6 +219,11 @@ background-clip: text;
 /*
 *service__area Style
 ======================*/
+.service__area{
+  position: relative;
+  z-index: 1;
+}
+
 .service__wrapper__area{
   border-radius: 48px;
   padding: 60px 50px 66px 50px;
@@ -222,6 +242,7 @@ background-clip: text;
   background-position: top left;
   background-size: 100% 100%;
   z-index: -1;
+  opacity: .5;
 }
 
 .single__service_item figure{
@@ -377,6 +398,26 @@ background-clip: text;
 ======================*/
 .chart__area{
   margin-bottom: 150px;
+  position: relative;
+  z-index: 1;
+}
+.donut__chart_inner{
+  position: relative;
+  z-index: 1;
+}
+.donut__chart_inner::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 1050px;
+  height: 1050px;
+  border-radius: 1050px;
+  opacity: 0.2;
+  background: var(--gradient, linear-gradient(93deg, #008BFF 0%, #0119D5 99.32%));
+  filter: blur(160px);
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .chart__content {
   margin-top: 180px;
@@ -401,6 +442,7 @@ background-clip: text;
   background-position: center center;
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .donut__chart:after {
   position: absolute;
@@ -596,6 +638,7 @@ background-clip: text;
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, rgba(37, 41, 46, 0.00) 0.54%, #25292E 55.68%, rgba(37, 41, 46, 0.00) 100.74%);
+  z-index: -1;
 }
 .footer__area p{
   color: #89898C;
@@ -643,7 +686,14 @@ background-clip: text;
 /*====== Responsive ========*/
 @media(max-width:992px){
   .heading {
+    padding: 0px 0;
+}
+  .heading .navbar {
+    background: black;
     padding: 20px 0;
+  }
+  .navbar-nav li a {
+    padding-left: 0 !important;
 }
   .navbar-collapse{
     padding: 15px;
@@ -796,6 +846,16 @@ background-clip: text;
 .chart__item strong {
   font-size: 20px;;
 }
+.donut__chart_inner::before{
+  width: 567px;
+  height: 576px;
+  border-radius: 576px;
+}
+.hero__area::before{
+  width: 450px;
+  height: 450px;
+  border-radius: 450px;
+}
 }
 
 @media(max-width:576px){
@@ -835,6 +895,16 @@ background-clip: text;
 }
 .cta__content {
   padding: 30px 15px;
+}
+.donut__chart_inner::before{
+  width: 480px;
+  height: 480px;
+  border-radius: 480px;
+}
+.hero__area::before{
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
 }
 }
 
