@@ -623,6 +623,10 @@ background-clip: text;
 .single__service_item h3 {
   margin-bottom: 15px;
 }
+.token_title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
 }
 
 @media(max-width:767px){
