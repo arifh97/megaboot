@@ -1,4 +1,5 @@
-//tsParticles library - https://github.com/matteobruni/tsparticles
+(function(){
+  //tsParticles library - https://github.com/matteobruni/tsparticles
 
 //tsParticles library - https://github.com/matteobruni/tsparticles
 
@@ -144,7 +145,7 @@ tsParticles.load("tsparticles", {
   },
   detectRetina: true,
   background: {
-    color: "#000000",
+    color: "#0D0D14",
     image: "",
     position: "50% 50%",
     repeat: "no-repeat",
@@ -192,3 +193,5 @@ tsParticles.load("tsparticles", {
     }
   }
 });
+
+})();
