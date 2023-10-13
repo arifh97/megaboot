@@ -25,8 +25,6 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="assets/plugins/fontawesome/fontawesome.all.min.css">
     <!-- FontAwesome CSS -->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.12/tsparticles.min.js"></script>
 
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -72,20 +70,21 @@
     <!-- Header area -->
 
     <!-- Hero area -->
-    <section class="hero__area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="hero__content text-center">
-                        <h1>Trading is easy and <span>safe with Megabot!</span> say good bye to the stress</h1>
-                        <p>With megabot you don’t need to check dextools every 5 minutes! no one will rug you anywhere</p>
-                        <a href="#" class="boxed__btn">Start trading with Megabot (25 of october)</a>
-                        <a href="#" class="outline__btn">x100 profitable than other bots</a>
+        <section class="hero__area"  id="tsparticles">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="hero__content text-center">
+                            <h1>Trading is easy and <span>safe with Megabot!</span> say good bye to the stress</h1>
+                            <p>With megabot you don’t need to check dextools every 5 minutes! no one will rug you anywhere</p>
+                            <a href="#" class="boxed__btn">Start trading with Megabot (25 of october)</a>
+                            <a href="#" class="outline__btn">x100 profitable than other bots</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
     <!-- Hero area -->
 
     <!-- Service area -->
@@ -127,12 +126,14 @@
     <!-- Cta area -->
     <section class="cta__area">
         <div class="container">
-            <div class="row bg-cover"  style="background-image: url('./assets/img/cta-bg.png');">
-                <div class="col-lg-12">
-                    <figure>
-                        <img src="assets/img/cta-ai-bot.png" alt="">
-                    </figure>
-                    <h3>Free for the first 200 users and for $MEGABOT Holders</h3>
+            <div class="row bg-cover justify-content-center"  style="background-image: url('./assets/img/cta-bg.png');">
+                <div class="col-lg-12 text-center">
+                    <div class="cta__content">
+                        <figure>
+                            <img src="assets/img/cta-ai-bot.png" alt="">
+                        </figure>
+                        <h3>Free for the first 200 users and for $MEGABOT Holders</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,15 +143,13 @@
     <!-- Megabot Token area -->
     <section class="megabot__token__area">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center megabot__token__wrapper">
                 <div class="col-lg-6">
-                    <figure>
-                        <img src="assets/img/token-left-img.png" alt="">
-                    </figure>
+                   
                 </div>
                 <div class="col-lg-6">
                     <div class="token__info">
-                        <h3>Twitter Megabot Token</h3>
+                        <h3 class="token_title">Twitter Megabot Token</h3>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="token__box__text">
@@ -284,6 +283,7 @@
     <!-- Partical JS -->
     <script src="assets/plugins/partical.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
     <!-- Main Script JS -->
     <script src="assets/js/script.js"></script>
    
