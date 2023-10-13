@@ -77,51 +77,6 @@ input[type=number] {
 
 
 /*
-*Copy Text Style
+*Renounced__area Style
 ================*/
-.copy__text{
-    position: relative;
-    padding: 10px;
-    display: flex;
-}
-.copy__text input.text{
-    padding: 10px;
-    display: flex;
-    border: none;
-    outline: none;
-    min-width: 577px;
-}
-.copy__text button{
-    padding: 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.copy__text button:active{
-    background: #ccc;
-}
-.copy__text button::before{
-    position: absolute;
-    content: "Copied";
-    top: -50px;
-    right: 0;
-    background: #ddd;
-    padding: 8px 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    display: none;
-}
-.copy__text button::after{
-    position: absolute;
-    content: "Copied";
-    top: -20px;
-    right: 25px;
-    background: #ddd;
-    height: 10px;
-    width: 10px;
-    transform: rotate(45deg);
-    display: none;
-}
-.copy__text.active button::before, .copy__text.active button::after{
-    display: block;
-}
+
