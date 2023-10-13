@@ -2,8 +2,6 @@
     'use strict';
     jQuery(document).ready(function() {
 
-        $.browserDetection(true);
-
         $('.active-slider').owlCarousel({
             nav: true,
             navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
