@@ -386,6 +386,34 @@ background-clip: text;
   width: 576px;
   height: 576px;
   margin: 250px auto;
+  position: relative;
+  z-index: 1;
+}
+.donut__chart:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  height: 150%;
+  background-image: url('../img/chart-shap.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+.donut__chart:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 70%;
+  background-image: url('../img/chart__robot.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 }
 .chart__content p{
   color: #DADADA;
@@ -750,6 +778,24 @@ background-clip: text;
 .renounced__area {
   padding-bottom: 60px;
 }
+.donut__chart {
+  width: auto;
+  height: auto;
+}
+.chart__item {
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+.chart__area {
+  margin-bottom: 100px;
+}
+.chart__items {
+  flex-direction: column;
+}
+.chart__item strong {
+  font-size: 20px;;
+}
 }
 
 @media(max-width:576px){
@@ -780,6 +826,16 @@ background-clip: text;
   max-width: 110px;
   height: 110px;
 }
+.chart__content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.donut__chart {
+  margin: 150px auto;
+}
+.cta__content {
+  padding: 30px 15px;
+}
 }
 
 @media(max-width:480px){
@@ -787,6 +843,9 @@ background-clip: text;
     font-size: 35px;
   }
   .cta__content h3 {
-    font-size: 25px;
+    font-size: 21px;
+  }
+  .chart__item strong {
+    font-size: 18px;;
   }
 }
