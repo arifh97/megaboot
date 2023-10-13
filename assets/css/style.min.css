@@ -128,6 +128,13 @@ ul.navbar-nav li a.active, ul.navbar-nav li:hover a{
 .hero__area{
   padding-top: 279px;
   padding-bottom: 170px;
+  position: relative;
+}
+.hero__area canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .hero__content{
   max-width: 735px;
