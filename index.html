@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="assets/plugins/fontawesome/fontawesome.all.min.css">
     <!-- FontAwesome CSS -->
 
+    <!-- partical -->
+    <link rel="stylesheet" href="assets/plugins/partical/jsoneditor.min.css">
+
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -70,7 +73,7 @@
     <!-- Header area -->
 
     <!-- Hero area -->
-        <section class="hero__area"  id="tsparticles">
+        <section class="hero__area" id="tsparticles">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -270,7 +273,7 @@
             </div>
         </div>
     </footer>
-
+    <div id="tsparticles"></div>
     <!-- Footer area -->
 
     <!-- jQuery JS -->
@@ -282,10 +285,17 @@
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Partical JS -->
-    <script src="assets/plugins/partical.js"></script>
+    <!-- first include tsParticles engine -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
+    <!-- then include any tsParticles plugin needed -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+
+    <!-- then include jquery wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+
+    <script src="assets/plugins/partical/partical.js"></script>
+
     <!-- Main Script JS -->
     <script src="assets/js/script.js"></script>
    
