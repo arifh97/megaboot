@@ -356,21 +356,45 @@ background-clip: text;
 /*
 *chart__area Style
 ======================*/
+.chart__content {
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
 .chart__content p{
   color: #DADADA;
   text-align: center;
   font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 160%; /* 51.2px */
   max-width: 1040px;
   margin: 0 auto;
+
 }
 
 
 /*
 *Renounced__area Style
 ======================*/
+.renounced__wrapper{
+  padding: 51px;
+  border-radius: 48px;
+  background: linear-gradient(180deg, rgba(26, 31, 47, 0.40) 0%, rgba(26, 31, 47, 0.00) 100%);
+  backdrop-filter: blur(8px);
+}
+
+.single__item{
+  color: #DADADA;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+}
+
+.transection__id {
+  margin-top: 90px;
+}
 .renounced__area .copy__text {
     position: relative;
     padding: 10px;
