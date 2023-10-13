@@ -8,57 +8,45 @@
             label: 'Sale',
             data: [90, 10,],
             borderWidth: 0,
-            backgroundColor: ['#0193FC', '#01E4FC']
+            borderColor:'#0D0D14',
+            backgroundColor: ['#0193FC', '#01E4FC'],
         }]
         },
         options: {
             responsive:true,
-            maintainAspectRatio:false,
-            aspectRatio:1 | 0,
+            maintainAspectRatio:true,
+            cutout: 186,
             scales: {
-                y: {
-                    beginAtZero: true,
-                    grid:{
-                        display:false,
-                    },
-                    ticks:{
-                        display:false
-                    }
-                },
-                x:{
-                    beginAtZero: true,
-                    grid:{
-                        display:false,
-                    },
-                    ticks:{
-                        display:false
-                    }
-                }
+                display:false
             },
             plugins:{
                 legend:{
-                    display:true,
-                    position:'bottom',
-                    labels:{
-                        generateLabels: (chart) => {
-                            const datasets = chart.data.datasets;
-                            return datasets[0].data.map((data, i) => ({
-                                text: `${chart.data.labels[i]} ${data}%`,
-                                fillStyle: datasets[0].backgroundColor[i],
-                                strokeStyle: datasets[0].backgroundColor[i],
-                                index: i,
-                                fontColor:'#DADADA',
-                            }))
-                        },
-                        boxWidth:10,
-                        boxHeight:10,
-                        usePointStyle:true,
-                        padding:50,
-                        borderRadius:100
-                    }
+                    display:false,
+                    // position:'bottom',
+                    // labels:{
+                    //     generateLabels: (chart) => {
+                    //         const datasets = chart.data.datasets;
+                    //         return datasets[0].data.map((data, i) => ({
+                    //             text: `${chart.data.labels[i]} ${data}%`,
+                    //             fillStyle: datasets[0].backgroundColor[i],
+                    //             strokeStyle: datasets[0].backgroundColor[i],
+                    //             index: i,
+                    //             fontColor:'#DADADA',
+                    //         }))
+                    //     },
+                    //     boxWidth:10,
+                    //     boxHeight:10,
+                    //     usePointStyle:true,
+                    //     padding:50,
+                    //     borderRadius:100
+                    // }
                 },
                 tooltip:{
-                    enabled: false
+                    enabled: true,
+                    intersect:true,
+                    displayColors:false,
+                    position:'nearest',
+                    
                 }
             }
             
