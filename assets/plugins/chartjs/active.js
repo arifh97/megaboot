@@ -15,8 +15,7 @@
         options: {
             responsive:true,
             maintainAspectRatio:true,
-            aspectRatio: 1|1,
-            cutout: '80%',
+            cutout: 186,
             scales: {
                 display:false
             },
