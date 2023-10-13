@@ -385,6 +385,15 @@ background-clip: text;
   line-height: 120%; /* 38.4px */
 }
 
+.single__item figure{
+  max-width: 152px;
+  height: 152px;
+}
+.single__item figure{
+  width: auto;
+  height: auto;
+}
+
 .transection__id {
   margin-top: 90px;
 }
