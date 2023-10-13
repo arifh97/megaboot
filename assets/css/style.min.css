@@ -745,6 +745,14 @@ background-clip: text;
 .renounced__area .copy__text input.text{
   font-size: 12px;
 }
+.transection__id {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+.single__item figure {
+  max-width: 110px;
+  height: 110px;
+}
 }
 
 @media(max-width:480px){
